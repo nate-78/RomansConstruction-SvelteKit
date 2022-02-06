@@ -14,7 +14,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.4",
+    "@fontsource/roboto-condensed": "^4.5.2",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1"
   }

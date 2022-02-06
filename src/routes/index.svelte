@@ -3,6 +3,7 @@
 </script>
 
 <script>
+	import Banner from '$lib/Banner.svelte';
 	import Counter from '$lib/Counter.svelte';
 </script>
 
@@ -11,6 +12,18 @@
 </svelte:head>
 
 <section>
+	<Banner bannerImg="images/banner-home.jpg"
+		titleTopLine="Committed to excellence "
+		titleBtmLine="from start to finish."
+		btnLink="/about"
+		btnText="Learn More"
+	>
+		<p>
+			We take pride in offering excellent service and quality products 
+			to our clients. We are here for one purpose &ndash; to serve you.
+		</p>
+	</Banner>
+
 	<h1>
 		<div class="welcome">
 			<picture>

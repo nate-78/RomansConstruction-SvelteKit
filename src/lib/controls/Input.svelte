@@ -2,6 +2,7 @@
   export let label = '';
   export let fieldName = '';
   export let fieldType = 'text';
+  export let change = (e) => {};
 
   let isActive = false;
   let value = '';
@@ -12,6 +13,7 @@
 
   const onChange = (e) => {
     value = e.target.value;
+    change(e);
     if (value != '') {
       isActive = true;
     } else {

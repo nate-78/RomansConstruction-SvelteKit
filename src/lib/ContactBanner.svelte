@@ -1,5 +1,25 @@
 <script>
   import Input from '$lib/controls/Input.svelte';
+
+  let name = '';
+  let email = '';
+  let phone = '';
+  let message = '';
+
+  const onInputChange = (event, field) => {
+    let v = event.target.value;
+    switch (field) {
+      case 'name':
+        name = v;
+      case 'email':
+        email = v;
+      case 'phone':
+        phone = v;
+      case 'message':
+        message = v;
+    }
+    console.log(name, email, phone, message);
+  }
 </script>
 
 <div class="contact-banner">
@@ -13,10 +33,12 @@
     <div class="right">
       <form>
         <div class="top-row">
-          <Input fieldName="name" label="Name" />
+          <Input fieldName="name" label="Name" change={(e) => {onInputChange(e, 'name')}} />
+          <Input fieldName="phone" label="Phone" type="phone" change={(e) => onInputChange(e, 'phone')} />
+          <Input fieldName="email" label="Email" type="email" change={(e) => onInputChange(e, 'email')} />
         </div>
         <div class="btm-row">
-
+          <Input fieldName="message" label="Message" change={(e) => onInputChange(e, 'message')} />
         </div>
       </form>
     </div>

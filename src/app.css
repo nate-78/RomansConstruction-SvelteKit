@@ -8,6 +8,7 @@
 	--font-header: 'Roboto Condensed', sans-serif;
 	--deep-blue: #263D51;
 	--med-slate: #43617D;
+	--light-blue: #6891b0;
 	--mustard: #DEB123;
 }
 
@@ -50,7 +51,6 @@ a:hover {
 
 h1 {
 	font-size: 2rem;
-	text-align: center;
 	font-family: var(--font-header);
 }
 
@@ -105,4 +105,10 @@ button:focus:not(:focus-visible) {
 	max-width: 1170px;
 	margin: auto;
 	padding: 0 15px;
+}
+
+.banner-content-body p {
+	padding-left: 15px;
+	border-left: 2px solid var(--light-blue);
+	margin-top: 0;
 }

@@ -39,6 +39,13 @@
 <style>
 	header {
 		padding: 30px 0;
+		background: transparent;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 99;
+		color: white;
 	}
 
 	header .container {

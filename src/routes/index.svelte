@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section>
-	<Banner bannerImg="images/banner-home.jpg"
+	<Banner bannerImg="images/banner-home.webp"
 		titleTopLine="Committed to excellence "
 		titleBtmLine="from start to finish."
 		btnLink="/about"

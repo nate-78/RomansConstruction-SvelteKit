@@ -11,7 +11,9 @@
 <header>
 	<div class="container">
 		<div class="logo">
-			<a href="/">Logo</a>
+			<a href="/">
+				<img src="images/Romans_Logo_White.webp" alt="Roman's Construction" />
+			</a>
 		</div>
 
 		<nav>
@@ -48,9 +50,14 @@
 		color: white;
 	}
 
+	.logo img {
+		width: 250px;
+	}
+
 	header .container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.menu-btn {
@@ -70,7 +77,7 @@
 		display: block;
 		margin: 2px;
 		width: 18px;
-		height: 2px;
+		height: 1.5px;
 		transition: .3s;
 		position: relative;
 		transform: rotate(0);

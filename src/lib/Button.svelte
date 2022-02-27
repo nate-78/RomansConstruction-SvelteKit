@@ -2,13 +2,14 @@
   export let link = '';
   export let text = '';
   export let hasWhiteText = false;
+  export let className = '';
 
   import Arrow from './Arrow.svelte';
 </script>
 
 <a sveltekit:prefetch 
   href={link} 
-  class={hasWhiteText ? "white-text" : ""}
+  class="{className} {hasWhiteText ? "white-text" : ""}"
 >
   <span class="bg"></span>
   <span class="arrow"><Arrow /></span>

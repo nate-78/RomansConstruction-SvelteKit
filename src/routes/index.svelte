@@ -4,6 +4,7 @@
 
 <script>
 	import Banner from '$lib/Banner.svelte';
+	import ContactBanner from '$lib/ContactBanner.svelte';
 </script>
 
 <svelte:head>
@@ -22,7 +23,7 @@
 			to our clients. We are here for one purpose &ndash; to serve you.
 		</p>
 	</Banner>
-
+	<ContactBanner />
 	
 </section>
 

@@ -4,7 +4,7 @@
   export let hasWhiteText = false;
   export let className = '';
 
-  import Arrow from './Arrow.svelte';
+  import Arrow from '../Arrow.svelte';
 </script>
 
 <a sveltekit:prefetch 

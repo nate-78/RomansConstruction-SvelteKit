@@ -5,7 +5,7 @@
   export let btnLink;
   export let btnText;
 
-  import Button from '$lib/Button.svelte';
+  import Button from '$lib/controls/Button.svelte';
 </script>
 
 <div class="banner" style="background-image: url({bannerImg})">

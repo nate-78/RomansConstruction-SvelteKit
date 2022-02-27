@@ -48,6 +48,7 @@
   }
   .banner .container {
     display: flex;
+    width: 100%;
   }
   .banner-content {
     height: 100%;

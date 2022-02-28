@@ -70,10 +70,12 @@
   .top-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
   }
   .btm-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
   }
 
 </style>

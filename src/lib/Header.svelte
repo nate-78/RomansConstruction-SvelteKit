@@ -50,9 +50,6 @@
 		color: white;
 	}
 
-	.logo {
-		position: relative;
-	}
 	.logo a {
 		display: inline-block;
 		padding: 5px;

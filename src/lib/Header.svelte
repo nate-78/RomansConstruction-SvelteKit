@@ -95,6 +95,8 @@
 		align-items: center;
 		flex-direction: column;
 		cursor: pointer;
+		position: relative;
+		z-index: 999;
 	}
 
 	.menu-btn span {
@@ -124,6 +126,26 @@
 		position: fixed;
 		left: 0;
 		top: 0;
+		background: rgba(255 255 255 / 80%);
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		list-style: none;
+		margin: 0;
+		padding-top: 30px;
+	}
+	nav ul li {
+		margin: .5rem 0;
+	}
+	nav ul li a {
+		color: var(--deep-blue);
+		transition: .3s;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	nav ul li a:hover {
+		color: var(--med-slate);
+		text-decoration: none;
 	}
 	
 </style>

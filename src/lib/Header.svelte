@@ -50,8 +50,35 @@
 		color: white;
 	}
 
+	.logo {
+		position: relative;
+	}
+	.logo a {
+		display: inline-block;
+		padding: 5px;
+		position: relative;
+	}
 	.logo img {
 		width: 250px;
+		display: block;
+	}
+	.logo a::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 0;
+		width: 0;
+		transition: .3s;
+		background-color: var(--mustard);
+		opacity: .8;
+		z-index: -1;
+	}
+	.logo a:hover::before {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
 	}
 
 	header .container {

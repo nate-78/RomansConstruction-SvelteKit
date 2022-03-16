@@ -9,10 +9,12 @@
   }
 
   let cssLeft = 0;
+  let activeSlideIdx = 0;
 
   const handleClick = (index) => {
     console.log('clicked ' + index);
     cssLeft = 100 * index;
+    activeSlideIdx = index;
   };
 </script>
 
@@ -23,7 +25,9 @@
   {#if numSlides && numSlides > 0}
     <div class="slide-btns">
       {#each slideArr as slide, idx}
-        <div on:click={() => handleClick(idx)}></div>
+        <div on:click={() => handleClick(idx)}
+          class={idx == activeSlideIdx ? 'active' : ''}  
+        ></div>
       {/each}
     </div>
   {/if}

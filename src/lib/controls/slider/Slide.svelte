@@ -4,6 +4,7 @@
 
 <style>
   div {
-    width: 645px;
+    width: 660px;
+    height: 100%;
   }
 </style>

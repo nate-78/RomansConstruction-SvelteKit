@@ -19,6 +19,8 @@
 <style>
   .quote-wrap {
     width: 100%;
+    height: 100%;
+    display: flex;
     padding-top: 30px;
   }
   .quote-content {
@@ -26,6 +28,8 @@
     background: white;
     position: relative;
     width: 90%;
+    height: 100%;
+    display: flex;
     margin: auto;
   }
   .icon {

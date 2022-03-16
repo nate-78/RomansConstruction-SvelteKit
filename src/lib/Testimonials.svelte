@@ -22,9 +22,18 @@
         </p>
       </div>
       <div class="right">
-        <Slider numSlides={2}>
+        <Slider numSlides={3}>
           <Slide>
-            <Testimonial name="Lindsay Smith" location="Decatur, Alabama">
+            <Testimonial name="Skip Smith" location="Decatur, Alabama">
+              <p>
+                Simply an outstanding work ethic. I can't say enough about the level of 
+                integrity from the guys at Roman's Construction. I could tell they actually
+                cared about what I needed.
+              </p>
+            </Testimonial>
+          </Slide>
+          <Slide>
+            <Testimonial name="Lindsay Owens" location="Decatur, Alabama">
               <p>
                 Everyone on the crew seemed so friendly.  And I was really impressed 
                 with how quickly they were able to finish our project.  I'd definitely 
@@ -58,6 +67,7 @@
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 40% 60%;
+    align-items: center;
     text-align: center;
     padding: 0 35px;
   }

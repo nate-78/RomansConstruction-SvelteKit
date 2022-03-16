@@ -126,13 +126,14 @@
 		position: fixed;
 		left: 0;
 		top: 0;
-		background: rgba(255 255 255 / 80%);
+		background: rgba(255 255 255 / 90%);
 		width: 100%;
 		height: 100%;
 		z-index: 99;
 		list-style: none;
 		margin: 0;
-		padding-top: 30px;
+		padding: 30px;
+		text-align: center;
 	}
 	nav ul li {
 		margin: .5rem 0;

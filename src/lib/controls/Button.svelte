@@ -13,7 +13,7 @@
 >
   <span class="bg"></span>
   <span class="arrow"><Arrow /></span>
-  {text}
+  <span class="text">{text}</span>
 </a>
 
 <style>
@@ -28,9 +28,15 @@
     overflow: hidden;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
   }
   a.white-text {
     color: white;
+  }
+
+  a.no-margin {
+    margin: 0;
   }
 
   .arrow {
@@ -50,10 +56,18 @@
     width: 41px;
     border-radius: 0 20px 20px 0;
     background: var(--mustard);
-    z-index: -1;
+    z-index: 0;
     transition: width .5s;
   }
   a:hover .bg {
     width: 120%;
+  }
+  a .arrow {
+    position: relative;
+    z-index: 1;
+  }
+  a .text {
+    position: relative;
+    z-index: 1;
   }
 </style>

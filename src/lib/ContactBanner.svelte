@@ -1,5 +1,6 @@
 <script>
   import Input from '$lib/controls/Input.svelte';
+  import Button from '$lib/controls/Button.svelte';
 
   let name = '';
   let email = '';
@@ -39,6 +40,7 @@
         </div>
         <div class="btm-row">
           <Input fieldName="message" label="Message" change={(e) => onInputChange(e, 'message')} />
+          <Button link="https://google.com" className="no-margin" text="Submit Your Request" hasWhiteText={true} />
         </div>
       </form>
     </div>
@@ -71,6 +73,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
+    margin-bottom: 1rem;
   }
   .btm-row {
     display: grid;

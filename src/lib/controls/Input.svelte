@@ -43,6 +43,7 @@
   .form-control {
     width: 100%;
     position: relative;
+    display: flex;
   }
   .form-control label {
     position: absolute;

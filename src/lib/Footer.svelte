@@ -2,7 +2,7 @@
   <div class="container">
     <div class="left">
       <div class="logo-sm">
-        logo
+        <img src="images/logo-narrows.webp" alt="roman's construction" />
       </div>
       <div class="address">
         <b>Roman's Construction</b><br />
@@ -75,5 +75,9 @@
     margin-left: 1.5rem;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  img {
+    width: 80px;
   }
 </style>

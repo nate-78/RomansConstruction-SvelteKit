@@ -1,7 +1,3 @@
-<script>
-  import Button from '$lib/controls/Button.svelte';
-</script>
-
 <div class="services-wrap" id="services">
   <div class="container">
     <div class="top-section">

@@ -67,4 +67,7 @@
   .test-wrap h2 {
     margin-bottom: 1rem;
   }
+  p.pre-heading {
+    color: var(--pale-blue);
+  }
 </style>

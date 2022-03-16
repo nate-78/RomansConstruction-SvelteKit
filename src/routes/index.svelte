@@ -5,6 +5,7 @@
 <script>
 	import Banner from '$lib/Banner.svelte';
 	import ContactBanner from '$lib/ContactBanner.svelte';
+	import Services from '$lib/home/Services.svelte';
 </script>
 
 <svelte:head>
@@ -24,6 +25,7 @@
 		</p>
 	</Banner>
 	<ContactBanner />
+	<Services />
 	
 </section>
 

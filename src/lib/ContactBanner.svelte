@@ -50,7 +50,8 @@
 <style>
   .contact-banner {
     background: var(--deep-blue);
-    /* padding: 1rem 0; */
+    box-shadow: 0 6px 12px rgba(0 0 0 / 45%);
+    margin-bottom: 60px;
   }
   .contact-banner .container {
     display: grid;

@@ -8,13 +8,16 @@
     }
   }
 
+  let cssLeft = 0;
+
   const handleClick = (index) => {
     console.log('clicked ' + index);
+    cssLeft = 100 * index;
   };
 </script>
 
 <div class="slide-window">
-  <div class="slide-track">
+  <div class="slide-track" style="left: -{cssLeft}%;">
     <slot></slot>
   </div>
   {#if numSlides && numSlides > 0}
@@ -35,8 +38,9 @@
   .slide-track {
     width: fit-content;
     position: relative;
-    left: 0;
     transition: .8s;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .slide-btns {
     width: 100%;
@@ -47,8 +51,8 @@
     justify-content: center;
   }
   .slide-btns > div {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background: var(--med-slate);
     border-radius: 100%;
     margin: .5rem;

@@ -1,3 +1,9 @@
+<script>
+  import Slider from "$lib/controls/slider/Slider.svelte";
+  import Slide from '$lib/controls/slider/Slide.svelte';
+  import Testimonial from "./Testimonial.svelte";
+</script>
+
 <div class="testimonials-wrap">
   <div class="container">
     <div class="test-wrap">
@@ -16,7 +22,25 @@
         </p>
       </div>
       <div class="right">
-
+        <Slider numSlides={2}>
+          <Slide>
+            <Testimonial name="Lindsay Smith" location="Decatur, Alabama">
+              <p>
+                Everyone on the crew seemed so friendly.  And I was really impressed 
+                with how quickly they were able to finish our project.  I'd definitely 
+                use them again.
+              </p>
+            </Testimonial>
+          </Slide>
+          <Slide>
+            <Testimonial name="Josh Walker" location="Decatur, Alabama">
+              <p>
+                A friend recommended Roman's Construction when we needed a new roof,
+                and I'm really glad we used them.  They made the process so easy.
+              </p>
+            </Testimonial>
+          </Slide>
+        </Slider>
       </div>
     </div>
   </div>
@@ -33,11 +57,11 @@
   .test-wrap {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 40% 60%;
     text-align: center;
     padding: 0 35px;
   }
-  .test-wrap h2, .test-wrap p {
+  .test-wrap h2, .test-wrap {
     color: white;
   }
   .test-wrap h2 {

@@ -66,6 +66,7 @@
 <style>
   .services-wrap {
     padding-bottom: 50px;
+    background-image: linear-gradient(180deg, white, #DBE1E9);
   }
   .top-section {
     text-align: center;

@@ -1,18 +1,36 @@
 <script>
 	import { fade } from 'svelte/transition';
+	import { browser } from "$app/env";
 
 	let menuOpen = false;
+	let isScrolled = false;
 
 	const handleClick = () => {
 		menuOpen = !menuOpen;
 	}
+
+	// handle stickiness 
+  if (browser) {
+    window.addEventListener('scroll', function () {
+			console.log(window.scrollY);
+			if (window.scrollY >= 10) {
+				isScrolled = true;
+			} else {
+				isScrolled = false;
+			}
+    });
+  }
 </script>
 
-<header>
+<header class={isScrolled ? 'sticky' : ''}>
 	<div class="container">
 		<div class="logo">
 			<a href="/">
-				<img src="images/Romans_Logo_White.webp" alt="Roman's Construction" />
+				{#if isScrolled}
+					<img src="images/logo-color.webp" alt="Roman's Construction" />
+				{:else}
+					<img src="images/Romans_Logo_White.webp" alt="Roman's Construction" />
+				{/if}
 			</a>
 		</div>
 
@@ -48,6 +66,13 @@
 		width: 100%;
 		z-index: 99;
 		color: white;
+		transition: .3s;
+	}
+
+	header.sticky {
+		background: white;
+		padding: 10px 0;
+		box-shadow: 0 3px 6px rgba(0 0 0 / 30%);
 	}
 
 	.logo a {
@@ -76,6 +101,10 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	header.sticky .logo img {
+		width: 200px;
 	}
 
 	header .container {

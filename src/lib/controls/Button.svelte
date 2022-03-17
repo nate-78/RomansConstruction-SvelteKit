@@ -24,6 +24,7 @@
     font-family: var(--font-header);
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: 700;
     color: var(--deep-blue);
     overflow: hidden;
     margin-top: 1rem;

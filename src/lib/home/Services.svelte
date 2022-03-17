@@ -46,7 +46,7 @@
         </a>
       </div>
       <div>
-        <a href="/exterior" sveltekit:prefetch>
+        <a href="/exterior-repairs" sveltekit:prefetch>
           <img src="images/services/exterior.webp" alt="exterior repairs" />
           <div class="bg-lt"></div>
           <div class="bg-dk"></div>

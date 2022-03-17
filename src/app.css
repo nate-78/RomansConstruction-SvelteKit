@@ -144,3 +144,7 @@ button:focus:not(:focus-visible) {
 	border-left: 2px solid var(--light-blue);
 	margin-top: 0;
 }
+
+section {
+	padding: 50px 0;
+}

@@ -6,7 +6,8 @@
 	import Banner from '$lib/Banner.svelte';
 	import ContactBanner from '$lib/ContactBanner.svelte';
 	import Services from '$lib/home/Services.svelte';
-import Testimonials from '$lib/Testimonials.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
+	import Gallery from '$lib/Gallery.svelte';
 </script>
 
 <svelte:head>
@@ -28,7 +29,7 @@ import Testimonials from '$lib/Testimonials.svelte';
 	<ContactBanner />
 	<Services />
 	<Testimonials />
-	
+	<Gallery />
 </section>
 
 <style>

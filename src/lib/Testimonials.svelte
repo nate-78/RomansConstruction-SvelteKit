@@ -4,7 +4,7 @@
   import Testimonial from "./Testimonial.svelte";
 </script>
 
-<div class="testimonials-wrap">
+<div class="testimonials-wrap" id="testimonials">
   <div class="container">
     <div class="test-wrap">
       <div class="left">

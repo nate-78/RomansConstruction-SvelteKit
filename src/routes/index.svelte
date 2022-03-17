@@ -14,11 +14,11 @@
 	<title>Home</title>
 </svelte:head>
 
-<section>
+<div>
 	<Banner bannerImg="images/banner-home.webp"
 		titleTopLine="Committed to excellence "
 		titleBtmLine="from start to finish."
-		btnLink="/about"
+		btnLink="/#testimonials"
 		btnText="Learn More"
 	>
 		<p>
@@ -30,7 +30,7 @@
 	<Services />
 	<Testimonials />
 	<Gallery />
-</section>
+</div>
 
 <style>
 

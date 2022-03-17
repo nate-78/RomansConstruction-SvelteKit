@@ -1,6 +1,9 @@
 <script>
 	import { fade } from 'svelte/transition';
 	import { browser } from "$app/env";
+	import { page } from '$app/stores';
+
+	let isHomePage = $page.url.pathname == '/' ? true : false;
 
 	let menuOpen = false;
 	let isScrolled = false;
@@ -26,7 +29,7 @@
 	<div class="container">
 		<div class="logo">
 			<a href="/">
-				{#if isScrolled}
+				{#if isScrolled || !isHomePage}
 					<img src="images/logo-color.webp" alt="Roman's Construction" />
 				{:else}
 					<img src="images/Romans_Logo_White.webp" alt="Roman's Construction" />

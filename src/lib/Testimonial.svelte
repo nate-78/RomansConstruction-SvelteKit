@@ -5,7 +5,7 @@
 
 <div class="quote-wrap">
   <div class="quote-content">
-    <div class="icon">"</div>
+    <div class="icon"><img src="images/Quotes_White.png" alt="quote" /></div>
     <div class="copy">
       <slot></slot>
       <div class="attribution">
@@ -48,6 +48,12 @@
     font-family: serif;
     left: calc(50% - 25px);
     box-shadow: 0 2px 5px rgba(0 0 0 / 30%);
+  }
+  .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
   }
 
   .copy {

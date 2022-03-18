@@ -96,7 +96,7 @@
 		width: 0;
 		transition: .3s;
 		background-color: var(--mustard);
-		opacity: .8;
+		opacity: .6;
 		z-index: -1;
 	}
 	.logo a:hover::before {

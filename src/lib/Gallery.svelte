@@ -41,7 +41,7 @@
 
 <style>
   .gallery-wrap {
-    background-image: url(images/GreyTriangles.png);
+    background-image: url(/images/GreyTriangles.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

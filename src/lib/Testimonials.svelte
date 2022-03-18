@@ -57,7 +57,7 @@
 
 <style>
   .testimonials-wrap {
-    background-image: url('images/blue-granite.webp');
+    background-image: url('/images/blue-granite.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

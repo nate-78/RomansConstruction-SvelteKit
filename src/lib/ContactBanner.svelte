@@ -23,7 +23,7 @@
   }
 </script>
 
-<div class="contact-banner">
+<div class="contact-banner" id="contact">
   <div class="container">
     <div class="left">
       <h3>

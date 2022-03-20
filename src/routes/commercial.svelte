@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Commercial Roofing | Roman's Construction</title>
 </svelte:head>
 
 <div>

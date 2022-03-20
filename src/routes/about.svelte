@@ -1,46 +1,48 @@
-<script context="module">
-	import { browser, dev } from '$app/env';
-
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
-	export const hydrate = dev;
-
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
-	export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
-	export const prerender = true;
+<script>
+  import BannerInner from '$lib/BannerInner.svelte';
+	import ContactBanner from '$lib/ContactBanner.svelte';
+	import AboutContent from '$lib/AboutContent.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
+	import Gallery from '$lib/Gallery.svelte';
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About | Roman's Construction</title>
 </svelte:head>
 
-<div class="content">
-	<h1>About this app</h1>
+<div>
+  <BannerInner bannerImg="images/clouds.webp"
+		bldgImg="images/house.webp"
+		titleTopLine="Quality and dependability "
+		titleBtmLine="you can count on."
+	>
+		<p>
+			From small buildings to shopping centers, single story or 
+			multi story, we've got you covered.
+		</p>
+	</BannerInner>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+	<ContactBanner />
 
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
+	<AboutContent
+		preheading="Who We Are"
+		headingLight="We've got "
+		headingBold="you covered."
+		img="images/neighborhood.webp"
+		imgAlt="neighborhood"
+	>
+		<p slot="topSlot">
+			We earn trust the old-fashioned way - by operating with integrity, open 
+			communication, responsiveness, and getting things done right.  We 
+			ensure total transparency and always operate with the understanding 
+			that your best interest is also ours.
+		</p>
+		<p slot="btmSlot">
+			We’re a family-owned business based in Decatur, Alabama. We are committed to providing 
+			service focused on quality, value and customer satisfaction. We love what we do—and it shows.
+		</p>
+	</AboutContent>
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
+	<Testimonials />
+	<Gallery />
 </div>
-
-<style>
-	.content {
-		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
-	}
-</style>

@@ -23,7 +23,7 @@
         <p class="pre-heading">
           {preHeading}
         </p>
-        <h2>{heading}</h2>
+        <h2 class="mt-1">{heading}</h2>
         <slot></slot>
         {#if svcList && svcList.length > 0}
           <ul>

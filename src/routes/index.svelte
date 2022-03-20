@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Home | Roman's Construction</title>
 </svelte:head>
 
 <div>

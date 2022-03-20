@@ -15,8 +15,6 @@
 		bldgImg="images/house.webp"
 		titleTopLine="Committed to excellence "
 		titleBtmLine="from start to finish."
-		btnLink="/#testimonials"
-		btnText="Learn More"
 	>
 		<p>
 			We take pride in offering excellent service and quality products 

@@ -52,13 +52,14 @@
   }
   .banner-content {
     height: 100%;
-    width: 50%;
+    width: 500px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 5;
+    font-size: 18px;
   }
   .banner-content strong {
     color: var(--mustard);

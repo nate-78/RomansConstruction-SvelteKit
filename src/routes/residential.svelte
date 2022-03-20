@@ -1,7 +1,9 @@
 <script>
   import BannerInner from '$lib/BannerInner.svelte';
 	import ContactBanner from '$lib/ContactBanner.svelte';
-import ServiceContent from '$lib/ServiceContent.svelte';
+	import ServiceContent from '$lib/ServiceContent.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
+	import Gallery from '$lib/Gallery.svelte';
 </script>
 
 <svelte:head>
@@ -36,4 +38,6 @@ import ServiceContent from '$lib/ServiceContent.svelte';
 			exception. Contact us today to see how we can revitalize your home.
 		</p>
 	</ServiceContent>
+	<Testimonials />
+	<Gallery />
 </div>

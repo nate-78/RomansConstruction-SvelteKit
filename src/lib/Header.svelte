@@ -79,7 +79,7 @@
 	}
 
 	.logo a {
-		display: inline-block;
+		display: block;
 		padding: 5px;
 		position: relative;
 	}
@@ -107,7 +107,7 @@
 	}
 
 	header.sticky .logo img {
-		width: 200px;
+		width: 150px;
 	}
 
 	header .container {

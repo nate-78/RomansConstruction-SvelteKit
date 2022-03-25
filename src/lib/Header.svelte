@@ -3,7 +3,7 @@
 	import { browser } from "$app/env";
 	import { page } from '$app/stores';
 
-	let isHomePage = $page.url.pathname == '/' ? true : false;
+	$: isHomePage = $page.url.pathname == '/' ? true : false;
 
 	let menuOpen = false;
 	let isScrolled = false;

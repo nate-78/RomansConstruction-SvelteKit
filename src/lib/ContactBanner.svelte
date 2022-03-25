@@ -7,6 +7,10 @@
   let phone = '';
   let message = '';
 
+  let showSubmitMsg = false;
+  let successMessage = "Thank you for your message. We'll be in touch with you shortly.";
+  let errorMsg = "";
+
   const onInputChange = (event, field) => {
     let v = event.target.value;
     switch (field) {
@@ -25,6 +29,27 @@
   const submitForm = (event) => {
     event.preventDefault();
     console.log('got here');
+    let data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        showSubmitMsg = true;
+        errorMsg = "";
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            errorMsg = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            errorMsg = "Oops! There was a problem submitting your form."
+          }
+        });
+      }
+    });
   };
 </script>
 
@@ -37,17 +62,34 @@
       </h3>
     </div>
     <div class="right">
-      <form on:submit={submitForm}>
-        <div class="top-row">
-          <Input fieldName="name" label="Name" change={(e) => {onInputChange(e, 'name')}} required={true} />
-          <Input fieldName="phone" label="Phone" type="phone" change={(e) => onInputChange(e, 'phone')} />
-          <Input fieldName="email" label="Email" type="email" change={(e) => onInputChange(e, 'email')} required={true} />
+      {#if !showSubmitMsg}
+        <form on:submit={submitForm} action="https://formspree.io/f/xzboazjb">
+          <div class="top-row">
+            <Input fieldName="name" label="Name" change={(e) => {onInputChange(e, 'name')}} required={true} />
+            <Input fieldName="phone" label="Phone" type="phone" change={(e) => onInputChange(e, 'phone')} />
+            <Input fieldName="email" label="Email" type="email" change={(e) => onInputChange(e, 'email')} required={true} />
+          </div>
+          <div class="btm-row">
+            <Input fieldName="message" label="Message" change={(e) => onInputChange(e, 'message')} />
+            <Button isSubmitBtn={true} className="no-margin" text="Submit Your Request" hasWhiteText={true} />
+          </div>
+          {#if errorMsg != ""}
+            <div class="row">
+              <div class="col">
+                <p class="error">
+                  {errorMsg}
+                </p>
+              </div>
+            </div>
+          {/if}
+        </form>
+      {:else}
+        <div class="center">
+          <p>
+            {successMessage}
+          </p>
         </div>
-        <div class="btm-row">
-          <Input fieldName="message" label="Message" change={(e) => onInputChange(e, 'message')} />
-          <Button isSubmitBtn={true} className="no-margin" text="Submit Your Request" hasWhiteText={true} />
-        </div>
-      </form>
+      {/if}
     </div>
   </div>
 </div>
@@ -85,6 +127,16 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
+  }
+
+  .right p {
+    color: white;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 </style>

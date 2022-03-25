@@ -15,19 +15,19 @@
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
-          </li>
-          <!-- <li>
-            <a href="/about">About</a>
-          </li> -->
-          <li>
-            <a href="/#services">Services</a>
+            <a href="/" sveltekit:prefetch>Home</a>
           </li>
           <li>
-            <a href="/gallery">Gallery</a>
+            <a href="/about" sveltekit:prefetch>About</a>
           </li>
           <li>
-            <a href="/#contact">Contact Us</a>
+            <a href="/#services" sveltekit:prefetch>Services</a>
+          </li>
+          <li>
+            <a href="/gallery" sveltekit:prefetch>Gallery</a>
+          </li>
+          <li>
+            <a href="/#contact" sveltekit:prefetch>Contact Us</a>
           </li>
         </ul>
       </nav>

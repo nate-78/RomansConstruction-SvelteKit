@@ -18,7 +18,7 @@
 	<Banner bannerImg="images/banner-home.webp"
 		titleTopLine="Committed to excellence "
 		titleBtmLine="from start to finish."
-		btnLink="/#testimonials"
+		btnLink="/about"
 		btnText="Learn More"
 	>
 		<p>

@@ -38,10 +38,23 @@
     max-width: 585px;
     margin: auto;
   }
-  .top *:not(.pre-heading):not(h2):not(b) {
+  .top {
     font-size: 18px;
   }
-  .top slot {
+
+  .btm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+  }
+
+  .btm .left img {
+    width: 100%;
+  }
+
+  .btm .right {
     font-size: 18px;
+    text-align: center;
   }
 </style>

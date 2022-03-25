@@ -10,7 +10,11 @@
 
 	const handleClick = () => {
 		menuOpen = !menuOpen;
-	}
+	};
+
+	const handleClose = () => {
+		menuOpen = false;
+	};
 
 	// handle stickiness 
   if (browser) {
@@ -48,10 +52,25 @@
 			{#if menuOpen}
 				<ul transition:fade>
 					<li>
-						<a href="/">Link 1</a>
+						<a href="/" on:click={handleClose}>Home</a>
 					</li>
 					<li>
-						<a href="/">Link 2</a>
+						<a href="/commercial" on:click={handleClose}>Commercial Roofing</a>
+					</li>
+					<li>
+						<a href="/residential" on:click={handleClose}>Residential Roofing</a>
+					</li>
+					<li>
+						<a href="/gutters" on:click={handleClose}>Gutter Repair &amp; Installation</a>
+					</li>
+					<li>
+						<a href="/exterior-repairs" on:click={handleClose}>Exterior Repairs</a>
+					</li>
+					<li>
+						<a href="/gallery" on:click={handleClose}>Gallery</a>
+					</li>
+					<li>
+						<a href="/#contact" on:click={handleClose}>Contact Us</a>
 					</li>
 				</ul>
 			{/if}

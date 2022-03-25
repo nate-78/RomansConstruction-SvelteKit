@@ -3,21 +3,45 @@
   export let text = '';
   export let hasWhiteText = false;
   export let className = '';
+  export let isSubmitBtn = false;
 
   import Arrow from '../Arrow.svelte';
+  import { createEventDispatcher } from 'svelte';
+
+  const dispatch = createEventDispatcher();
+
+  function submit() {
+    dispatch('clicked');
+  }
 </script>
 
-<a sveltekit:prefetch 
-  href={link} 
-  class="{className} {hasWhiteText ? "white-text" : ""}"
->
-  <span class="bg"></span>
-  <span class="arrow"><Arrow /></span>
-  <span class="text">{text}</span>
-</a>
+{#if !isSubmitBtn}
+  <a sveltekit:prefetch 
+    href={link} 
+    class="{className} {hasWhiteText ? "white-text" : ""}"
+  >
+    <span class="bg"></span>
+    <span class="arrow"><Arrow /></span>
+    <span class="text">{text}</span>
+  </a>
+{:else}
+  <button
+    on:click={submit}
+    class="{className} {hasWhiteText ? "white-text" : ""}"
+    type="submit"
+  >
+    <span class="bg"></span>
+    <span class="arrow"><Arrow /></span>
+    <span class="text">{text}</span>
+  </button>
+{/if}
 
 <style>
-  a {
+  button {
+    cursor: pointer;
+  }
+  
+  a, button {
     position: relative;
     border: 1px solid var(--mustard);
     padding: 8px;
@@ -31,12 +55,17 @@
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    background: none;
+    padding-left: 45px;
+    justify-content: center;
   }
-  a.white-text {
+  a.white-text,
+  button.white-text {
     color: white;
   }
 
-  a.no-margin {
+  a.no-margin,
+  button.no-margin {
     margin: 0;
   }
 
@@ -44,11 +73,13 @@
     margin-right: 5px;
   }
 
-  a:hover {
+  a:hover,
+  button:hover {
     text-decoration: none;
   }
 
-  a .bg {
+  a .bg,
+  button .bg {
     position: absolute;
     display: block;
     top: 0;
@@ -60,14 +91,18 @@
     z-index: 0;
     transition: width .5s;
   }
-  a:hover .bg {
+  a:hover .bg,
+  button:hover .bg {
     width: 120%;
   }
-  a .arrow {
-    position: relative;
+  a .arrow,
+  button .arrow {
+    position: absolute;
+    left: 5px;
     z-index: 1;
   }
-  a .text {
+  a .text,
+  button .text {
     position: relative;
     z-index: 1;
   }

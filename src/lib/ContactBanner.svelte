@@ -21,6 +21,11 @@
     }
     console.log(name, email, phone, message);
   }
+
+  const submitForm = (event) => {
+    event.preventDefault();
+    console.log('got here');
+  };
 </script>
 
 <div class="contact-banner" id="contact">
@@ -32,15 +37,15 @@
       </h3>
     </div>
     <div class="right">
-      <form>
+      <form on:submit={submitForm}>
         <div class="top-row">
-          <Input fieldName="name" label="Name" change={(e) => {onInputChange(e, 'name')}} />
+          <Input fieldName="name" label="Name" change={(e) => {onInputChange(e, 'name')}} required={true} />
           <Input fieldName="phone" label="Phone" type="phone" change={(e) => onInputChange(e, 'phone')} />
-          <Input fieldName="email" label="Email" type="email" change={(e) => onInputChange(e, 'email')} />
+          <Input fieldName="email" label="Email" type="email" change={(e) => onInputChange(e, 'email')} required={true} />
         </div>
         <div class="btm-row">
           <Input fieldName="message" label="Message" change={(e) => onInputChange(e, 'message')} />
-          <Button link="https://google.com" className="no-margin" text="Submit Your Request" hasWhiteText={true} />
+          <Button isSubmitBtn={true} className="no-margin" text="Submit Your Request" hasWhiteText={true} />
         </div>
       </form>
     </div>

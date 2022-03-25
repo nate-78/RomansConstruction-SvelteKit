@@ -2,6 +2,7 @@
   export let label = '';
   export let fieldName = '';
   export let fieldType = 'text';
+  export let required = false;
   export let change = (e) => {};
 
   let isActive = false;
@@ -33,6 +34,7 @@
 <div class="form-control {isActive ? 'active' : ''}">
   <label for="{fieldName}">{label}</label>
   <input type={fieldType} name={fieldName} id={fieldName} value={value}
+    required={required ? true : null}
     on:focus={onFocus}
     on:change={onChange}
     on:blur={onBlur}  

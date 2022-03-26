@@ -17,8 +17,8 @@
 		titleBtmLine="from top to bottom."
 	>
 		<p>
-			We take pride in offering excellent service and quality products 
-			to our clients. We are here for one purpose &ndash; to serve you.
+			We take pride in the quality of our work. We're dependable, 
+			affordable, and committed to excellent service.
 		</p>
 	</BannerInner>
 
@@ -27,15 +27,16 @@
 	<ServiceContent
 		lgImg="images/neighborhood.webp"
 		lgImgAlt="neighborhood"
-		smImg="images/shingles.webp"
+		smImg="images/services/gutters.webp"
 		smImgAlt="shingles"
 		preHeading="Residential"
 		heading="Helping your home stand the test of time."
-		svcList={['roof repair', 'roof replacement', 'exterior repair']}
+		svcList={[]}
 	>
 		<p>
-			Homes can develop a lot of wear and tear over time, and yours is no 
-			exception. Contact us today to see how we can revitalize your home.
+			Not only are gutters an attractive addition to your home, but 
+			they help keep your yard healthy and your home protected. Call 
+			us today to get an estimate.
 		</p>
 	</ServiceContent>
 

@@ -1,3 +1,7 @@
+<script>
+  import ContactLink from "./controls/ContactLink.svelte";
+</script>
+
 <footer>
   <div class="container">
     <div class="left">
@@ -27,7 +31,7 @@
             <a href="/gallery" sveltekit:prefetch>Gallery</a>
           </li>
           <li>
-            <a href="#contact" sveltekit:prefetch>Contact Us</a>
+            <ContactLink />
           </li>
         </ul>
       </nav>

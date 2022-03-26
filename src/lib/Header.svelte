@@ -2,6 +2,7 @@
 	import { fade } from 'svelte/transition';
 	import { browser } from "$app/env";
 	import { page } from '$app/stores';
+	import ContactLink from './controls/ContactLink.svelte';
 
 	$: isHomePage = $page.url.pathname == '/' ? true : false;
 
@@ -19,7 +20,7 @@
 	// handle stickiness 
   if (browser) {
     window.addEventListener('scroll', function () {
-			console.log(window.scrollY);
+			// console.log(window.scrollY);
 			if (window.scrollY >= 10) {
 				isScrolled = true;
 			} else {
@@ -72,8 +73,8 @@
 					<li>
 						<a href="/gallery" on:click={handleClose}>Gallery</a>
 					</li>
-					<li>
-						<a href="#contact" on:click={handleClose}>Contact Us</a>
+					<li on:click={handleClose}>
+						<ContactLink className="nav-link" />
 					</li>
 				</ul>
 			{/if}

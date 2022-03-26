@@ -39,15 +39,12 @@
 
 <style>
   .row {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     display: grid;
     grid-template-columns: 8fr 4fr;
     grid-gap: 3rem;
   }
   .left {
-    /* margin-right: 2rem; */
     position: relative;
   }
   .right {
@@ -64,17 +61,12 @@
     right: -9px;
     top: -9px;
     content: '';
-    width: 112px;
-    height: 112px;
     width: 18%;
     height: unset;
     aspect-ratio: 1;
     background: var(--mustard);
   }
   .main-img img {
-    width: 582px;
-    margin-left: 150px;
-    margin-bottom: 65px;
     width: 75%;
     margin-left: 25%;
     margin-bottom: 11%;
@@ -84,16 +76,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 225px;
     width: 31%;
     aspect-ratio: 1;
   }
   .small-img::before {
     content: '';
-    width: 112px;
-    height: 112px;
     width: 52%;
-    height: unset;
     aspect-ratio: 1;
     background: var(--light-blue);
     left: -9px;

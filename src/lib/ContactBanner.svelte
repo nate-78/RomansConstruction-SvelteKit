@@ -71,7 +71,7 @@
           </div>
           <div class="btm-row">
             <Input fieldName="message" label="Message" change={(e) => onInputChange(e, 'message')} />
-            <Button isSubmitBtn={true} className="no-margin" text="Submit Your Request" hasWhiteText={true} />
+            <Button isSubmitBtn={true} className="no-margin tall" text="Submit Your Request" hasWhiteText={true} />
           </div>
           {#if errorMsg != ""}
             <div class="row">
@@ -137,6 +137,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 1024px) {
+    .contact-banner {
+      padding-bottom: 3rem;
+    }
+    .contact-banner .container {
+      grid-template-columns: 1fr;
+    }
+    .left h3 br {
+      display: none;
+    }
+
+    form {
+      max-width: 780px;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .top-row, .btm-row {
+      grid-template-columns: 1fr;
+    }
   }
 
 </style>

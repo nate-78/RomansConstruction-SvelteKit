@@ -106,4 +106,8 @@
     position: relative;
     z-index: 1;
   }
+
+  .tall {
+    height: 50px;
+  }
 </style>

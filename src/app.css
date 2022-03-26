@@ -187,4 +187,8 @@ section {
 	p.lg {
 		font-size: 1.15rem;
 	}
+
+	p.pre-heading {
+		font-size: 14px;
+	}
 }

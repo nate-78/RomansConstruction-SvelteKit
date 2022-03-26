@@ -12,7 +12,7 @@
 
 <div>
   <BannerInner bannerImg="images/clouds.webp"
-		bldgImg="images/house.webp"
+		bldgImg="images/svc-exterior.webp"
 		titleTopLine="Making the most "
 		titleBtmLine="of your home or business."
 	>

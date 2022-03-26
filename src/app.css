@@ -152,3 +152,39 @@ button:focus:not(:focus-visible) {
 section {
 	padding: 50px 0;
 }
+
+@media (max-width: 525px) {
+	h1 {
+		font-size: 2rem;
+		font-family: var(--font-header);
+	}
+
+	h2 {
+		font-size: 1.75rem;
+		font-family: var(--font-header);
+		color: var(--deep-blue);
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		font-family: var(--font-header);
+	}
+
+	h4 {
+		font-size: 1.25rem;
+		font-family: var(--font-header);
+	}
+
+	h5 {
+		font-size: 1.15rem;
+		font-family: var(--font-header);
+	}
+
+	.mt-1 {
+		margin-top: 1rem;
+	}
+
+	p.lg {
+		font-size: 1.15rem;
+	}
+}

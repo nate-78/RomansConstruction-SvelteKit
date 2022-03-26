@@ -30,7 +30,7 @@
 		smImg="images/services/gutters.webp"
 		smImgAlt="gutters"
 		preHeading="Residential"
-		heading="Helping your home stand the test of time."
+		heading="Keeping your home and yard in optimal condition."
 		svcList={[]}
 	>
 		<p>

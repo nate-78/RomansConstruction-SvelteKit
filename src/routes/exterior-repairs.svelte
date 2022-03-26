@@ -30,8 +30,8 @@
 		smImg="images/services/exterior.webp"
 		smImgAlt="exterior repair"
 		preHeading="Residential"
-		heading="Helping your home stand the test of time."
-		svcList={['roof repair', 'roof replacement', 'exterior repair']}
+		heading="Restoring your home's beauty."
+		svcList={['roof repair', 'siding repair']}
 	>
 		<p>
 			Homes can develop a lot of wear and tear over time, and yours is no 

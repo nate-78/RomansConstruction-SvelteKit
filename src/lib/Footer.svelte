@@ -18,7 +18,7 @@
             <a href="/" sveltekit:prefetch>Home</a>
           </li>
           <li>
-            <a href="/about" sveltekit:prefetch>About</a>
+            <a href="/about" sveltekit:prefetch>About Us</a>
           </li>
           <li>
             <a href="/#services" sveltekit:prefetch>Services</a>

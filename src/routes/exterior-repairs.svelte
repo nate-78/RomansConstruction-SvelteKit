@@ -31,11 +31,14 @@
 		smImgAlt="exterior repair"
 		preHeading="Residential"
 		heading="Restoring your home's beauty."
-		svcList={['roof repair', 'siding repair']}
+		svcList={[]}
 	>
 		<p>
-			Homes can develop a lot of wear and tear over time, and yours is no 
-			exception. Contact us today to see how we can revitalize your home.
+			Siding can serve several purposes for your home or business: provide 
+			insulation, protect your property, and add curb appeal. We 
+			can ensure that your exteriors are beautiful and durable. We've been 
+			trusted by our clients for many 
+			years to provide some of the highest quality siding options. 
 		</p>
 	</ServiceContent>
 

@@ -55,7 +55,7 @@
 						<a href="/" on:click={handleClose}>Home</a>
 					</li>
 					<li>
-						<a href="/about">About Us</a>
+						<a href="/about" on:click={handleClose}>About Us</a>
 					</li>
 					<li>
 						<a href="/commercial" on:click={handleClose}>Commercial Roofing</a>

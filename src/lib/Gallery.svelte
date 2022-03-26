@@ -60,8 +60,40 @@
     margin-bottom: 2rem;
   }
 
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .btn-wrap {
     display: flex;
     justify-content: center;
+  }
+
+  @media (max-width: 700px) {
+    .slides {
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .slides > div {
+      grid-column: span 4;
+    }
+    .slides > div:nth-child(4),
+    .slides > div:last-child {
+      grid-column: span 6;
+      aspect-ratio: 1;
+    }
+  }
+  @media (max-width: 365px) {
+    .slides > div,
+    .slides > div:nth-child(4) {
+      grid-column: span 6;
+      aspect-ratio: .75;
+    }
+    .slides > div:last-child {
+      grid-column: span 12;
+      aspect-ratio: 1;
+    }
   }
 </style>

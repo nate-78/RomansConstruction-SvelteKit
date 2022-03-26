@@ -80,4 +80,19 @@
   img {
     width: 80px;
   }
+
+  @media (max-width: 800px) {
+    footer .container {
+      flex-direction: column;
+    }
+    footer .left {
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 525px) {
+    footer .right nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 </style>

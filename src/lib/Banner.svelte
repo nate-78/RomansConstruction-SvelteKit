@@ -53,6 +53,7 @@
   .banner-content {
     height: 100%;
     width: 500px;
+    max-width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;

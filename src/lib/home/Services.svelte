@@ -126,4 +126,15 @@
   .services > div:hover .bg-dk {
     transform: rotate(0);
   }
+
+  @media (max-width: 800px) {
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 400px) {
+    .services {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

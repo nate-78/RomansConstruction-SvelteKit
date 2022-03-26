@@ -73,7 +73,7 @@
 						<a href="/gallery" on:click={handleClose}>Gallery</a>
 					</li>
 					<li>
-						<a href="/#contact" on:click={handleClose}>Contact Us</a>
+						<a href="#contact" on:click={handleClose}>Contact Us</a>
 					</li>
 				</ul>
 			{/if}

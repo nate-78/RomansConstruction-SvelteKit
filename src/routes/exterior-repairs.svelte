@@ -13,8 +13,8 @@
 <div>
   <BannerInner bannerImg="images/clouds.webp"
 		bldgImg="images/house.webp"
-		titleTopLine="Committed to excellence "
-		titleBtmLine="from top to bottom."
+		titleTopLine="Making the most "
+		titleBtmLine="of your home or business."
 	>
 		<p>
 			We take pride in offering excellent service and quality products 

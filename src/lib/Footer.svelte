@@ -27,7 +27,7 @@
             <a href="/gallery" sveltekit:prefetch>Gallery</a>
           </li>
           <li>
-            <a href="/#contact" sveltekit:prefetch>Contact Us</a>
+            <a href="#contact" sveltekit:prefetch>Contact Us</a>
           </li>
         </ul>
       </nav>

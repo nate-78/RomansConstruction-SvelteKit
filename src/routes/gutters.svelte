@@ -28,7 +28,7 @@
 		lgImg="images/neighborhood.webp"
 		lgImgAlt="neighborhood"
 		smImg="images/services/gutters.webp"
-		smImgAlt="shingles"
+		smImgAlt="gutters"
 		preHeading="Residential"
 		heading="Helping your home stand the test of time."
 		svcList={[]}

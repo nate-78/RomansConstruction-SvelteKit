@@ -27,8 +27,8 @@
 	<ServiceContent
 		lgImg="images/neighborhood.webp"
 		lgImgAlt="neighborhood"
-		smImg="images/shingles.webp"
-		smImgAlt="shingles"
+		smImg="images/services/exterior.webp"
+		smImgAlt="exterior repair"
 		preHeading="Residential"
 		heading="Helping your home stand the test of time."
 		svcList={['roof repair', 'roof replacement', 'exterior repair']}

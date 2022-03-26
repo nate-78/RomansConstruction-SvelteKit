@@ -12,7 +12,7 @@
 
 <div>
   <BannerInner bannerImg="images/clouds.webp"
-		bldgImg="images/house.webp"
+		bldgImg="images/svc-gutters.webp"
 		titleTopLine="Committed to excellence "
 		titleBtmLine="from top to bottom."
 	>

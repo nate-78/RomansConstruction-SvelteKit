@@ -57,4 +57,16 @@
     font-size: 18px;
     text-align: center;
   }
+
+  @media (max-width: 767px) {
+    .btm {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 550px) {
+    .btm {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
+  }
 </style>

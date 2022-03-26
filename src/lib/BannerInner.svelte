@@ -75,4 +75,23 @@
   .bldg-img img {
     display: block;
   }
+
+  h1 span, h1 strong {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 550px) {
+    .banner-content {
+      width: 100%;
+    }
+    .bldg-img {
+      max-width: 100%;
+    }
+    .banner {
+      padding-bottom: 50%;
+    }
+    h1 span, h1 strong {
+      white-space: normal;
+    }
+  }
 </style>

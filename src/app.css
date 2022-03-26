@@ -16,6 +16,10 @@
 	--font-color: #000;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;

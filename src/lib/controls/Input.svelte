@@ -59,7 +59,7 @@
     font-size: .9rem;
   }
   .form-control input {
-    height: 34px;
+    height: 50px;
     width: 100%;
     background: white;
     border: none;

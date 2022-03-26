@@ -66,7 +66,7 @@
     background: var(--mustard);
   }
   .main-img img {
-    width: 610px;
+    width: 582px;
     margin-left: 150px;
     margin-bottom: 65px;
     position: relative;

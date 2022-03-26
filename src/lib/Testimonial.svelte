@@ -61,6 +61,8 @@
     color: var(--font-color);
     max-width: 400px;
     margin: auto;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .attribution {
     text-transform: uppercase;
@@ -72,5 +74,14 @@
     color: var(--light-blue);
     font-size: 14px;
     letter-spacing: .5px;
+  }
+
+  @media (max-width: 890px) {
+    .quote-content {
+      width: 95%;
+    }
+    .copy {
+      font-size: 16px;
+    }
   }
 </style>

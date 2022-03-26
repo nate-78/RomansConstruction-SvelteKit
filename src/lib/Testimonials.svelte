@@ -2,6 +2,8 @@
   import Slider from "$lib/controls/slider/Slider.svelte";
   import Slide from '$lib/controls/slider/Slide.svelte';
   import Testimonial from "./Testimonial.svelte";
+
+  let sliderWidth; 
 </script>
 
 <div class="testimonials-wrap" id="testimonials">
@@ -21,9 +23,9 @@
           customers have to say.
         </p>
       </div>
-      <div class="right">
+      <div class="right" bind:clientWidth={sliderWidth}>
         <Slider numSlides={3}>
-          <Slide>
+          <Slide width={sliderWidth}>
             <Testimonial name="Skip Smith" location="Decatur, Alabama">
               <p>
                 Simply an outstanding work ethic. I can't say enough about the level of 
@@ -32,7 +34,7 @@
               </p>
             </Testimonial>
           </Slide>
-          <Slide>
+          <Slide width={sliderWidth}>
             <Testimonial name="Lindsay Owens" location="Decatur, Alabama">
               <p>
                 Everyone on the crew seemed so friendly.  And I was really impressed 
@@ -41,7 +43,7 @@
               </p>
             </Testimonial>
           </Slide>
-          <Slide>
+          <Slide width={sliderWidth}>
             <Testimonial name="Josh Walker" location="Decatur, Alabama">
               <p>
                 A friend recommended Roman's Construction when we needed a new roof,
@@ -79,5 +81,20 @@
   }
   p.pre-heading {
     color: var(--pale-blue);
+  }
+
+  @media (max-width: 750px) {
+    .test-wrap {
+      grid-template-columns: 100%;
+    }
+    .test-wrap .left {
+      max-width: 425px;
+      margin: auto;
+    }
+  }
+  @media (max-width: 550px) {
+    .test-wrap {
+      padding: 0;
+    }
   }
 </style>

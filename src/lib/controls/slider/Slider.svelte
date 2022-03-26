@@ -1,4 +1,5 @@
 <script>
+  // number of slides lets us build out the slide buttons
   export let numSlides;
 
   let slideArr = [];
@@ -12,6 +13,7 @@
   let activeSlideIdx = 0;
 
   const handleClick = (index) => {
+    // shift the slides 100% x whichever slide it is (0-based)
     console.log('clicked ' + index);
     cssLeft = 100 * index;
     activeSlideIdx = index;

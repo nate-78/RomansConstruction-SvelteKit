@@ -27,9 +27,9 @@
           <li>
             <a href="/#services" sveltekit:prefetch>Services</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="/gallery" sveltekit:prefetch>Gallery</a>
-          </li>
+          </li> -->
           <li>
             <ContactLink />
           </li>

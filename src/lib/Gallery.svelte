@@ -32,11 +32,11 @@
     </div>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="btn-wrap">
       <Button link="/gallery" text="View More" />
     </div>
-  </div>
+  </div> -->
 </section>
 
 <style>

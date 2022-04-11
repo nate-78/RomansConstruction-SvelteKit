@@ -70,9 +70,9 @@
 					<li>
 						<a href="/exterior-repairs" on:click={handleClose}>Exterior Repairs</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="/gallery" on:click={handleClose}>Gallery</a>
-					</li>
+					</li> -->
 					<li on:click={handleClose}>
 						<ContactLink className="nav-link" />
 					</li>
